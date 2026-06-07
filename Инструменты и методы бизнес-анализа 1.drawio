@@ -1,0 +1,152 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="4YSuIxvfvQJZErjVyUTk">
+    <mxGraphModel dx="1063" dy="523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-18" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;html=1;" value="Онлайн-школа&amp;nbsp; (Процесс работы с клиентами TO-BE)" vertex="1">
+          <mxGeometry height="550" width="1200" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-19" parent="ijugewfmHf06Z7-Xdkvp-18" style="swimlane;startSize=20;horizontal=0;html=1;" value="Клиент" vertex="1">
+          <mxGeometry height="120" width="1200" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-26" parent="ijugewfmHf06Z7-Xdkvp-19" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="Оставлена заявка на сайте" vertex="1">
+          <mxGeometry height="70" width="70" x="65" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-30" parent="ijugewfmHf06Z7-Xdkvp-19" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Оплатить счет (перейти по ссылке)&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-68" edge="1" parent="ijugewfmHf06Z7-Xdkvp-19" source="ijugewfmHf06Z7-Xdkvp-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-35" parent="ijugewfmHf06Z7-Xdkvp-19" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Начать обучение в LMS&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-37" parent="ijugewfmHf06Z7-Xdkvp-19" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="Клиент успешно зачислен" vertex="1">
+          <mxGeometry height="70" width="70" x="1100" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-20" parent="ijugewfmHf06Z7-Xdkvp-18" style="swimlane;startSize=20;horizontal=0;html=1;" value="CRM" vertex="1">
+          <mxGeometry height="120" width="1200" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-44" edge="1" parent="ijugewfmHf06Z7-Xdkvp-20" source="ijugewfmHf06Z7-Xdkvp-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-27" parent="ijugewfmHf06Z7-Xdkvp-20" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Авто-регистрация лида и скоринг&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-46" edge="1" parent="ijugewfmHf06Z7-Xdkvp-20" source="ijugewfmHf06Z7-Xdkvp-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-47" connectable="0" parent="ijugewfmHf06Z7-Xdkvp-46" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Да" vertex="1">
+          <mxGeometry relative="1" x="-0.1324" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-28" parent="ijugewfmHf06Z7-Xdkvp-20" style="rhombus;whiteSpace=wrap;html=1;" value="Новый клиент" vertex="1">
+          <mxGeometry height="50" width="50" x="210" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-29" parent="ijugewfmHf06Z7-Xdkvp-20" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;Сервис: Авто-генерация ссылки на оплату&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-53" edge="1" parent="ijugewfmHf06Z7-Xdkvp-20" source="ijugewfmHf06Z7-Xdkvp-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-31" parent="ijugewfmHf06Z7-Xdkvp-20" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start;&quot;&gt;&lt;font&gt;Ожидание оплаты (Таймаут 48ч)&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-32" parent="ijugewfmHf06Z7-Xdkvp-20" style="rhombus;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="640" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-33" parent="ijugewfmHf06Z7-Xdkvp-20" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;Сервис: Создание аккаунта и открытие курса в LMS&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="810" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-54" edge="1" parent="ijugewfmHf06Z7-Xdkvp-20" source="ijugewfmHf06Z7-Xdkvp-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ijugewfmHf06Z7-Xdkvp-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-55" connectable="0" parent="ijugewfmHf06Z7-Xdkvp-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Оплачено" vertex="1">
+          <mxGeometry relative="1" x="-0.0351" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-21" parent="ijugewfmHf06Z7-Xdkvp-18" style="swimlane;startSize=20;horizontal=0;html=1;" value="Менеджер по продажам" vertex="1">
+          <mxGeometry height="290" width="1200" y="260" as="geometry">
+            <mxRectangle height="30" width="480" y="260" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-38" parent="ijugewfmHf06Z7-Xdkvp-21" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Квалификация лида, презентация продукта&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="175" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-59" edge="1" parent="ijugewfmHf06Z7-Xdkvp-21" source="ijugewfmHf06Z7-Xdkvp-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-39" parent="ijugewfmHf06Z7-Xdkvp-21" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&amp;nbsp;Связаться с клиентом, обработать возражения&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="605" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-60" edge="1" parent="ijugewfmHf06Z7-Xdkvp-21" source="ijugewfmHf06Z7-Xdkvp-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-63" connectable="0" parent="ijugewfmHf06Z7-Xdkvp-60" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Отказ" vertex="1">
+          <mxGeometry relative="1" x="-0.2184" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-40" parent="ijugewfmHf06Z7-Xdkvp-21" style="rhombus;whiteSpace=wrap;html=1;" value="Обработать возражения" vertex="1">
+          <mxGeometry height="50" width="50" x="640" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-41" parent="ijugewfmHf06Z7-Xdkvp-21" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="Сделка проиграна" vertex="1">
+          <mxGeometry height="70" width="70" x="630" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-43" edge="1" parent="ijugewfmHf06Z7-Xdkvp-18" source="ijugewfmHf06Z7-Xdkvp-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-45" edge="1" parent="ijugewfmHf06Z7-Xdkvp-18" source="ijugewfmHf06Z7-Xdkvp-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-48" connectable="0" parent="ijugewfmHf06Z7-Xdkvp-45" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Нет" vertex="1">
+          <mxGeometry relative="1" x="-0.4195" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-49" edge="1" parent="ijugewfmHf06Z7-Xdkvp-18" source="ijugewfmHf06Z7-Xdkvp-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-50" edge="1" parent="ijugewfmHf06Z7-Xdkvp-18" source="ijugewfmHf06Z7-Xdkvp-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-51" edge="1" parent="ijugewfmHf06Z7-Xdkvp-18" source="ijugewfmHf06Z7-Xdkvp-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ijugewfmHf06Z7-Xdkvp-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-56" edge="1" parent="ijugewfmHf06Z7-Xdkvp-18" source="ijugewfmHf06Z7-Xdkvp-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-57" connectable="0" parent="ijugewfmHf06Z7-Xdkvp-56" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Нет оплаты" vertex="1">
+          <mxGeometry relative="1" x="-0.5057" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-61" edge="1" parent="ijugewfmHf06Z7-Xdkvp-18" source="ijugewfmHf06Z7-Xdkvp-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-62" connectable="0" parent="ijugewfmHf06Z7-Xdkvp-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Договорились" vertex="1">
+          <mxGeometry relative="1" x="0.2706" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-24" parent="1" style="swimlane;startSize=20;horizontal=0;html=1;" value="Преподаватель" vertex="1">
+          <mxGeometry height="140" width="1200" y="750" as="geometry">
+            <mxRectangle height="30" width="480" y="260" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-42" parent="ijugewfmHf06Z7-Xdkvp-24" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(15, 17, 21); font-family: quote-cjk-patch, Inter, system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, sans-serif; text-align: start;&quot;&gt;&lt;font&gt;Приветственный звонок, добавление в чат группы&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="810" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-64" edge="1" parent="1" source="ijugewfmHf06Z7-Xdkvp-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ijugewfmHf06Z7-Xdkvp-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ijugewfmHf06Z7-Xdkvp-65" edge="1" parent="1" source="ijugewfmHf06Z7-Xdkvp-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ijugewfmHf06Z7-Xdkvp-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
