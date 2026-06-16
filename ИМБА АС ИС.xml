@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="UfAUcRmQMxALHPfwz2Cs">
+    <mxGraphModel dx="1235" dy="695" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool_asis" parent="1" style="swimlane;html=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=0;fontSize=12;fontStyle=1;strokeColor=#333333;fillColor=#F5F5F5;" value="Онлайн-школа (Процесс работы с клиентами AS-IS)" vertex="1">
+          <mxGeometry height="680" width="1170" x="50" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_client" parent="pool_asis" style="swimlane;html=1;startSize=20;horizontal=0;strokeColor=#666666;fillColor=#FFFFFF;" value="Клиент" vertex="1">
+          <mxGeometry height="140" width="1170" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="start_event" parent="lane_client" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Заявка&#xa;на сайте" vertex="1">
+          <mxGeometry height="40" width="40" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="client_pay" parent="lane_client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Оплата счета&#xa;по реквизитам" vertex="1">
+          <mxGeometry height="50" width="110" x="455" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="client_receive" parent="lane_client" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Получение письма,&#xa;вход на платформу" vertex="1">
+          <mxGeometry height="50" width="120" x="900" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="end_event" parent="lane_client" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="1110" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="kb3NgJoYmL0k80iS1nLT-15" edge="1" parent="lane_client" source="client_receive" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="end_event" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="350" as="sourcePoint" />
+            <mxPoint x="610" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane_manager" parent="pool_asis" style="swimlane;html=1;startSize=20;horizontal=0;strokeColor=#666666;fillColor=#FFFFFF;" value="Менеджер по продажам" vertex="1">
+          <mxGeometry height="180" width="1170" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="task_copy_lead" parent="lane_manager" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;strokeWidth=1;" value="Ручной перенос данных&#xa;из Tilda в Excel" vertex="1">
+          <mxGeometry height="50" width="140" x="120" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="task_manual_invoice" parent="lane_manager" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Звонок клиенту,&#xa;ручное выставление счета" vertex="1">
+          <mxGeometry height="50" width="140" x="280" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="task_check_bank" parent="lane_manager" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Запрос выписки /&#xa;ожидание подтверждения" vertex="1">
+          <mxGeometry height="50" width="140" x="440" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="task_manual_reg" parent="lane_manager" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Ручное заведение аккаунта&#xa;на GetCourse / Moodle" vertex="1">
+          <mxGeometry height="50" width="140" x="600" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="task_send_creds" parent="lane_manager" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Отправка доступов&#xa;вручную (Email/TG)" vertex="1">
+          <mxGeometry height="50" width="130" x="770" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="flow2" edge="1" parent="lane_manager" source="task_copy_lead" style="endArrow=classic;html=1;rounded=0;" target="task_manual_invoice">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow8" edge="1" parent="lane_manager" source="task_manual_reg" style="endArrow=classic;html=1;rounded=0;" target="task_send_creds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kb3NgJoYmL0k80iS1nLT-10" parent="lane_manager" style="points=[[0.25,0.25,0],[0.5,0,0],[0.75,0.25,0],[1,0.5,0],[0.75,0.75,0],[0.5,1,0],[0.25,0.75,0],[0,0.5,0]];shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=parallel;" value="" vertex="1">
+          <mxGeometry height="50" width="50" x="935" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="task_notify_curator" parent="lane_manager" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Передача контактов&#xa;куратору в чат" vertex="1">
+          <mxGeometry height="50" width="130" x="895" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="kb3NgJoYmL0k80iS1nLT-11" edge="1" parent="lane_manager" source="task_send_creds" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="kb3NgJoYmL0k80iS1nLT-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="90" />
+              <mxPoint x="920" y="65" />
+            </Array>
+            <mxPoint x="560" y="210" as="sourcePoint" />
+            <mxPoint x="610" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kb3NgJoYmL0k80iS1nLT-14" edge="1" parent="lane_manager" source="kb3NgJoYmL0k80iS1nLT-10" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="task_notify_curator" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="210" as="sourcePoint" />
+            <mxPoint x="610" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane_accountant" parent="pool_asis" style="swimlane;html=1;startSize=20;horizontal=0;strokeColor=#666666;fillColor=#FFFFFF;" value="Бухгалтер" vertex="1">
+          <mxGeometry height="160" width="1170" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="task_verify_payment" parent="lane_accountant" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Проверка поступления&#xa;денежных средств" vertex="1">
+          <mxGeometry height="50" width="130" x="445" y="28.5" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway_paid" parent="lane_accountant" style="rhombus;whiteSpace=wrap;html=1;" value="Оплата&#xa;есть?" vertex="1">
+          <mxGeometry height="60" width="60" x="640" y="23.5" as="geometry" />
+        </mxCell>
+        <mxCell id="flow6" edge="1" parent="lane_accountant" source="task_verify_payment" style="endArrow=classic;html=1;rounded=0;" target="gateway_paid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_curator" parent="pool_asis" style="swimlane;html=1;startSize=20;horizontal=0;strokeColor=#666666;fillColor=#FFFFFF;" value="Куратор / Преподаватель" vertex="1">
+          <mxGeometry height="170" width="1170" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="curator_welcome" parent="lane_curator" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;" value="Приветственный звонок,&#xa;добавление в чат вручную" vertex="1">
+          <mxGeometry height="50" width="140" x="890" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" edge="1" parent="pool_asis" source="start_event" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="task_copy_lead">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="100" />
+              <mxPoint x="100" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow3" edge="1" parent="pool_asis" source="task_manual_invoice" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;entryX=0;entryY=0.5;" target="client_pay">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow4" edge="1" parent="pool_asis" source="client_pay" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;" target="task_check_bank">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow5" edge="1" parent="pool_asis" source="task_check_bank" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="task_verify_payment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow11" edge="1" parent="pool_asis" source="task_notify_curator" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="curator_welcome">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow12" edge="1" parent="pool_asis" source="curator_welcome" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;entryX=0.5;entryY=1;exitDx=0;exitDy=0;" target="end_event">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kb3NgJoYmL0k80iS1nLT-4" edge="1" parent="pool_asis" source="gateway_paid" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="task_manual_reg" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="560" y="380" as="sourcePoint" />
+            <mxPoint x="610" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kb3NgJoYmL0k80iS1nLT-8" connectable="0" parent="kb3NgJoYmL0k80iS1nLT-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Да" vertex="1">
+          <mxGeometry relative="1" x="0.4628" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kb3NgJoYmL0k80iS1nLT-6" edge="1" parent="pool_asis" source="gateway_paid" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="task_manual_invoice" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="490" />
+              <mxPoint x="650" y="490" />
+              <mxPoint x="350" y="490" />
+            </Array>
+            <mxPoint x="560" y="380" as="sourcePoint" />
+            <mxPoint x="610" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kb3NgJoYmL0k80iS1nLT-7" connectable="0" parent="kb3NgJoYmL0k80iS1nLT-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Нет" vertex="1">
+          <mxGeometry relative="1" x="-0.3669" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kb3NgJoYmL0k80iS1nLT-12" edge="1" parent="pool_asis" source="kb3NgJoYmL0k80iS1nLT-10" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="client_receive" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="380" as="sourcePoint" />
+            <mxPoint x="610" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
